@@ -149,11 +149,10 @@
 <div class="p-4 rounded-4 shadow-lg text-white" style="background-color: #f25c05; max-width: 450px; margin: 0 auto;">
     <h3 class="fw-bold mb-4 text-white" style="font-family: sans-serif; letter-spacing: 0.5px;">Quick Quote</h3>
     
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
         
-        <!-- 1. Service Dropdown (Matches 1000164213.jpg) -->
         <div class="mb-3">
-            <select name="service_type" class="form-select custom-form-input py-2" style="border-radius: 10px; background-color: #fff; color: #333;" required>
+            <select name="Service Type" class="form-select custom-form-input py-2" style="border-radius: 10px; background-color: #fff; color: #333;" required>
                 <option value="" selected disabled>Choose Your Service . . .</option>
                 <option value="Car Transport">Car Transport</option>
                 <option value="Relocation Services">Relocation Services</option>
@@ -166,50 +165,48 @@
             </select>
         </div>
 
-        <!-- 2. Full Name -->
         <div class="mb-3">
-            <input type="text" name="name" class="form-control custom-form-input py-2" placeholder="Full Name" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
+            <input type="text" name="Full Name" class="form-control custom-form-input py-2" placeholder="Full Name" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
         </div>
 
-        <!-- 3. Email Address -->
         <div class="mb-3">
-            <input type="email" name="email" class="form-control custom-form-input py-2" placeholder="Email Address" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;">
+            <input type="email" name="Email" class="form-control custom-form-input py-2" placeholder="Email Address" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
         </div>
 
-        <!-- 4. Phone Number -->
         <div class="mb-3">
-            <input type="tel" name="phone" class="form-control custom-form-input py-2" placeholder="Phone Number" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
+            <input type="tel" name="Phone Number" pattern="[6-9][0-9]{9}" title="Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9" class="form-control custom-form-input py-2" placeholder="Phone Number (10 Digits)" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
         </div>
 
-        <!-- 5. Vehicle Name & Type -->
         <div class="mb-3">
-            <input type="text" name="vehicle_details" class="form-control custom-form-input py-2" placeholder="Vehicle Name & Type" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;">
+            <input type="text" name="Vehicle Details" class="form-control custom-form-input py-2" placeholder="Vehicle Name & Type" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
         </div>
 
-        <!-- 6. Moving From -->
         <div class="mb-3">
-            <input type="text" name="moving_from" class="form-control custom-form-input py-2" placeholder="Moving From" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
+            <input type="text" name="Moving From" class="form-control custom-form-input py-2" placeholder="Moving From" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
         </div>
 
-        <!-- 7. Moving To -->
         <div class="mb-3">
-            <input type="text" name="moving_to" class="form-control custom-form-input py-2" placeholder="Moving To" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
+            <input type="text" name="Moving To" class="form-control custom-form-input py-2" placeholder="Moving To" style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;" required>
         </div>
 
-        <!-- 8. Enquiry / Extra Details -->
         <div class="mb-3">
-            <textarea name="extra_details" class="form-control custom-form-input py-2" rows="2" placeholder="Enquiry / Extra Details . . ." style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;"></textarea>
+            <textarea name="Extra Details" class="form-control custom-form-input py-2" rows="2" placeholder="Enquiry / Extra Details . . ." style="border-radius: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.7); color: #fff;"></textarea>
         </div>
 
-        <!-- 9. Terms & Conditions Checkbox -->
         <div class="mb-4 form-check d-flex align-items-center">
             <input type="checkbox" class="form-check-input me-2" id="termsCheck" required style="cursor: pointer;">
             <label class="form-check-label small text-white-50" for="termsCheck" style="cursor: pointer;">I accept all the <span class="text-decoration-underline text-white">Terms & Conditions</span></label>
         </div>
 
-        <!-- Submit Button -->
         <button type="submit" class="btn text-white px-4 py-2 fw-bold" style="background-color: #111; border-radius: 8px; letter-spacing: 0.5px;">Submit</button>
     </form>
+</div>
+
+<style>
+    .custom-form-input::placeholder { color: rgba(255, 255, 255, 0.75) !important; opacity: 1; }
+    .custom-form-input { color: white !important; }
+</style>
+
 </div>
 
 <!-- Extra Style fixing for Placeholders to look white/semi-transparent just like screenshots -->
