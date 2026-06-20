@@ -43,26 +43,47 @@
 </head>
 <body>
 
-    <!-- NAVIGATION BAR (LOGO SECTION) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center fw-bold text-uppercase" href="#">
-                <!-- Agar aapke paas logo file ho to src="/logo.png" change kar sakte hain -->
-                <img src="https://img.icons8.com/color/96/delivery-truck.png" alt="PCC Logo" class="me-2">
-                <span class="text-primary">Pragati</span>&nbsp;<span class="text-warning">Car Carriers</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse id="navbarNav"">
-                <ul class="navbar-nav ms-auto fw-semibold">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#quote-form">Get Quote</a></li>
-                </ul>
-            </div>
+    <!-- NAV BAR: PLACE ON ALL PAGES (INDEX & CITY PAGES) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-uppercase" href="index.html">
+            <img src="https://img.icons8.com/color/96/delivery-truck.png" alt="PCC Logo" style="max-height: 40px; margin-right: 8px;">
+            <span class="text-primary">Pragati</span>&nbsp;<span class="text-warning">Car Carriers</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pragatiNavbar" aria-controls="pragatiNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="pragatiNavbar">
+            <ul class="navbar-nav ms-auto fw-semibold">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <!-- CITIES DROPDOWN MENU -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Network (Cities)
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-mumbai.html">Mumbai Hub</a></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-pune.html">Pune Hub</a></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-hyderabad.html">Hyderabad Hub</a></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-chennai.html">Chennai Hub</a></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-kolkata.html">Kolkata Hub</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-ahmedabad.html">Ahmedabad Hub</a></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-bangalore.html">Bangalore Hub</a></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-delhi.html">Delhi NCR Hub</a></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-lucknow.html">Lucknow Hub</a></li>
+                        <li><a class="dropdown-menu-item dropdown-item" href="car-transport-indore.html">Indore Hub</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html#contact">Contact Us</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- HERO SECTION -->
     <header class="hero-section text-center">
